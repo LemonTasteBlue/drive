@@ -27,7 +27,7 @@ function createWindow(): BrowserWindow {
 
 
   if (serve) {
-    win.webContents.openDevTools();
+    // win.webContents.openDevTools();
     require('electron-reload')(__dirname, {
       electron: require(path.join(__dirname, '/../node_modules/electron'))
     });
